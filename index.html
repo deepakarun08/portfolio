@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepak — UX Designer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <div class="brand"><a href="index.html">Deepak Arun</a></div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+        <a href="deepak-resume.pdf" class="resume">Resume</a>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        🌙
+      </button>
+
+      <div class="menu" id="menu">
+        <span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <!-- Dots animation background -->
+    <div class="hero-dots-bg">
+      <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+
+        <!-- =========================
+         HORIZONTAL DOT FLOWS
+    ========================== -->
+
+        <!-- Row 1 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="6s" repeatCount="indefinite" path="M -60 100 L 1260 100" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="8s" begin="-2s" repeatCount="indefinite" path="M -60 100 L 1260 100" />
+        </circle>
+
+        <!-- Row 2 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="7s" repeatCount="indefinite" path="M -60 180 L 1260 180" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M -60 180 L 1260 180" />
+        </circle>
+
+        <!-- Row 3 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="6.5s" repeatCount="indefinite" path="M -60 260 L 1260 260" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="8.5s" begin="-1.5s" repeatCount="indefinite" path="M -60 260 L 1260 260" />
+        </circle>
+
+        <!-- Row 4 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="7.5s" repeatCount="indefinite" path="M -60 340 L 1260 340" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="9.5s" begin="-2.5s" repeatCount="indefinite" path="M -60 340 L 1260 340" />
+        </circle>
+
+        <!-- Row 5 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="6s" repeatCount="indefinite" path="M -60 420 L 1260 420" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="8s" begin="-2s" repeatCount="indefinite" path="M -60 420 L 1260 420" />
+        </circle>
+
+        <!-- Row 6 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="7s" repeatCount="indefinite" path="M -60 500 L 1260 500" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M -60 500 L 1260 500" />
+        </circle>
+
+        <!-- =========================
+         VERTICAL DOT FLOWS
+    ========================== -->
+
+        <!-- Column 1 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="7s" repeatCount="indefinite" path="M 250 -60 L 250 660" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="9s" begin="-3s" repeatCount="indefinite" path="M 250 -60 L 250 660" />
+        </circle>
+
+        <!-- Column 2 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="6.5s" repeatCount="indefinite" path="M 450 -60 L 450 660" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="8.5s" begin="-2s" repeatCount="indefinite" path="M 450 -60 L 450 660" />
+        </circle>
+
+        <!-- Column 3 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="7.5s" repeatCount="indefinite" path="M 700 -60 L 700 660" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="9.5s" begin="-4s" repeatCount="indefinite" path="M 700 -60 L 700 660" />
+        </circle>
+
+        <!-- Column 4 -->
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="6s" repeatCount="indefinite" path="M 950 -60 L 950 660" />
+        </circle>
+        <circle r="2" fill="currentColor">
+          <animateMotion dur="8s" begin="-2.5s" repeatCount="indefinite" path="M 950 -60 L 950 660" />
+        </circle>
+
+      </svg>
+    </div>
+
+
+    <div class="hero-inner">
+      <h1>
+        Designing systems that help people make <span>better decisions</span>
+      </h1>
+
+      <p>
+        Senior UI/UX Design Consultant with 15 years of experience designing enterprise platforms and workflow-driven
+        systems that help users make confident decisions.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary">View Case Studies</a>
+        <a href="#contact" class="btn-secondary">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <h2>About</h2>
+      <p class="lead">
+        Hi, I'm Deepak Arun, a Senior UI/UX Design Consultant with 15 years of hands-on experience in designing
+        user-centered digital products.
+      </p>
+      <p>
+        I've spent most of my career working on complex systems-where clarity, trust, and usability matter more than
+        visual polish alone. I enjoy breaking down complicated workflows, identifying friction points, and translating
+        them into intuitive, scalable design solutions.
+      </p>
+      <p>&nbsp;</p>
+      <p>I believe strong UX is about enabling confident decision-making, especially in enterprise
+        environments where errors are costly and time is limited.</p>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work" class="section section-surface">
+    <div class="section-inner">
+      <h2>Selected Work</h2>
+
+      <div class="work-grid">
+        <a href="case-study.html" class="work-card">
+          <div class="work-meta">
+            <span>Enterprise UX</span>
+            <span>2024</span>
+          </div>
+          <h3>Oracle APEX Workflow Redesign</h3>
+          <p>Reduced errors and training time for enterprise users.</p>
+        </a>
+
+        <a href="case-study.html" class="work-card">
+          <div class="work-meta">
+            <span>Platform Design</span>
+            <span>2023</span>
+          </div>
+          <h3>Document Management System</h3>
+          <p>Designed scalable document workflows and permissions.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h2>Contact</h2>
+      <p class="lead">
+        Interested in working together or discussing UX?
+      </p>
+
+      <a href="mailto:your@email.com" class="btn-primary">
+        Get in touch
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Deepak Arun — UX Designer
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

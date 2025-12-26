@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oracle APEX Workflow Redesign — UX Case Study</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand"><a href="index.html">Deepak Arun</a></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html#about">About</a>
+      <a href="index.html#work">Work</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="deepak-resume.pdf" class="resume">Resume</a>
+    </nav>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      🌙
+    </button>
+
+    <!-- HAMBURGER -->
+    <div class="menu" id="menu" aria-label="Open menu">
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+
+<!-- HERO -->
+<section class="cs-hero">
+  <div class="cs-hero-inner">
+    <span class="cs-tag">Enterprise UX · 2024</span>
+    <h1>Oracle APEX Workflow Redesign</h1>
+
+    <p>
+      Redesigning complex enterprise approval workflows to improve clarity,
+      reduce errors, and help users complete tasks confidently without relying
+      on training or documentation.
+    </p>
+
+    <div class="cs-metrics">
+      <div>
+        <strong>30%</strong>
+        <span>Faster task completion</span>
+      </div>
+      <div>
+        <strong>−40%</strong>
+        <span>User errors</span>
+      </div>
+      <div>
+        <strong>50%</strong>
+        <span>Training time reduced</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Overview</h2>
+
+    <p class="lead">
+      This project focused on simplifying approval workflows used daily by
+      finance and operations teams, while working within strict enterprise,
+      compliance, and technical constraints.
+    </p>
+
+    <div class="cs-overview-grid">
+      <div>
+        <h4>My Role</h4>
+        <p>UX Design, Research, IA, Interaction Design, Testing</p>
+      </div>
+      <div>
+        <h4>Users</h4>
+        <p>Finance Approvers, Operations Staff, Admin Users</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <p>Oracle APEX (Web)</p>
+      </div>
+      <div>
+        <h4>Duration</h4>
+        <p>8 weeks</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEXT -->
+<section class="section section-surface">
+  <div class="section-inner">
+    <h2>Context & Background</h2>
+
+    <p>
+      The application supported invoice approvals across multiple business units.
+      Although functionally correct, users frequently made mistakes, delayed
+      approvals, and depended heavily on SOP documents and training sessions.
+    </p>
+
+    <p>
+      Leadership initially perceived this as a “training issue,” but usability
+      analysis revealed deeper UX problems.
+    </p>
+  </div>
+</section>
+
+<!-- USERS -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Understanding the Users</h2>
+
+    <p class="lead">
+      The primary users were experienced professionals, but not technical experts.
+    </p>
+
+    <ul class="cs-list">
+      <li>Time-constrained and multitasking</li>
+      <li>Risk-averse due to financial and compliance impact</li>
+      <li>Low tolerance for ambiguity or errors</li>
+    </ul>
+
+    <p>
+      A key insight emerged early: users did not want flexibility or customization —
+      they wanted clarity, predictability, and confidence.
+    </p>
+
+    <p>
+      <em>“I just want to know what I should do next, without second-guessing.”</em>
+    </p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="section section-surface">
+  <div class="section-inner">
+    <h2>Problem Definition</h2>
+
+    <p class="lead">
+      Users struggled to complete workflows accurately due to unclear status,
+      inconsistent interactions, and delayed feedback.
+    </p>
+
+    <ul class="cs-list">
+      <li>Workflow status was hard to interpret</li>
+      <li>Errors appeared after submission instead of being prevented</li>
+      <li>Actions behaved differently across modules</li>
+      <li>High cognitive load on every screen</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONSTRAINTS -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Constraints & Considerations</h2>
+
+    <p class="lead">
+      The solution had to work within significant technical and business constraints.
+    </p>
+
+    <ul class="cs-list">
+      <li>Oracle APEX component limitations</li>
+      <li>Backend workflows could not be redesigned</li>
+      <li>Compliance rules were non-negotiable</li>
+      <li>Minimal disruption to existing users</li>
+    </ul>
+
+    <p>
+      These constraints shaped a design approach focused on clarity and structure
+      rather than radical UI changes.
+    </p>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section class="section section-surface">
+  <div class="section-inner">
+    <h2>Research & Discovery</h2>
+
+    <p class="lead">
+      I combined qualitative and quantitative methods to understand user behavior.
+    </p>
+
+    <ul class="cs-list">
+      <li>Stakeholder interviews</li>
+      <li>Contextual inquiry and observation</li>
+      <li>Heuristic evaluation</li>
+      <li>Error log and support ticket analysis</li>
+    </ul>
+
+    <p>
+      Analysis showed that most errors occurred due to misinterpreting workflow
+      status, not lack of knowledge.
+    </p>
+  </div>
+</section>
+
+<!-- STRATEGY -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Design Strategy</h2>
+
+    <p class="lead">
+      I defined four guiding principles that informed all design decisions:
+    </p>
+
+    <ul class="cs-list">
+      <li>Status before action</li>
+      <li>Prevent errors, don’t explain them</li>
+      <li>One primary action per screen</li>
+      <li>Progressive disclosure for complexity</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section class="section section-surface">
+  <div class="section-inner">
+    <h2>Solution</h2>
+
+    <p class="lead">
+      The redesigned experience focused on making system intent explicit.
+    </p>
+
+    <ul class="cs-list">
+      <li>Status-first layout at the top of every workflow screen</li>
+      <li>Inline validation to prevent errors early</li>
+      <li>Consistent placement of primary actions</li>
+      <li>Clear confirmation and feedback after actions</li>
+    </ul>
+
+    <p>
+      Complexity was not removed — it was structured and prioritized.
+    </p>
+  </div>
+</section>
+
+<!-- TESTING -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Usability Testing & Validation</h2>
+
+    <p class="lead">
+      Designs were validated using real workflows and real users.
+    </p>
+
+    <ul class="cs-list">
+      <li>6 moderated usability sessions</li>
+      <li>Task-based testing with live data</li>
+      <li>Observation of errors, hesitation, and confidence</li>
+    </ul>
+
+    <p>
+      All participants completed tasks successfully without external guidance.
+    </p>
+  </div>
+</section>
+
+<!-- OUTCOME -->
+<section class="section section-surface">
+  <div class="section-inner">
+    <h2>Outcome & Impact</h2>
+
+    <ul class="cs-list">
+      <li>30% faster task completion</li>
+      <li>40% reduction in user errors</li>
+      <li>Training time reduced from 4 weeks to 2 weeks</li>
+      <li>Fewer support tickets and escalations</li>
+    </ul>
+
+    <p>
+      Users reported increased confidence and reduced mental effort.
+    </p>
+  </div>
+</section>
+
+<!-- LEARNINGS -->
+<section class="section">
+  <div class="section-inner">
+    <h2>Key Learnings</h2>
+
+    <ul class="cs-list">
+      <li>Enterprise users value clarity over flexibility</li>
+      <li>Designing within constraints builds better systems</li>
+      <li>Status visibility is critical in workflow UX</li>
+    </ul>
+
+    <p>
+      This project reinforced the importance of UX as a communication layer
+      between complex systems and human decision-making.
+    </p>
+  </div>
+</section>
+
+<!-- NEXT -->
+<section class="section section-surface">
+  <div class="section-inner cs-next">
+    <p>Next case study</p>
+    <a href="case-study.html">Document Management System →</a>
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 Deepak Arun — UX Designer
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
