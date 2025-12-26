@@ -9,7 +9,7 @@ const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").ma
 if (savedTheme) {
   root.setAttribute("data-theme", savedTheme);
 } else if (systemPrefersLight) {
-  root.setAttribute("data-theme", "light");
+  root.setAttribute("data-theme", "dark");
 }
 
 /* Update icon */
